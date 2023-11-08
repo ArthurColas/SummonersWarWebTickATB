@@ -1,0 +1,14 @@
+.grid-container-vertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create 2 equal-width columns */
+    gap: 10px; /* Add some spacing between the columns */
+}
+
+/* Define styles for the speed container and rectangles */
+.speed-container {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: #3498db;
+    margin-top: 10px;
+}
