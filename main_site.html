@@ -7,18 +7,26 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <label for="numberMonsters">Number of monsters:</label>
-    <input type="number" id="numberMonsters" name="numberMonsters" placeholder="_______">
-
-    <div id="monsters-container" class="grid-container-vertical">
-        <!-- Initial content here -->
-    </div>
-
-    <div class="grid-container-horizontal">
-        <div id="speed-container">
-            <!-- Rectangles will be added here dynamically -->
+    <div class="top-half">
+        <div class="numberMonsters">
+            <label for="numberMonsters">Number of monsters:</label>
+            <input type="number" id="numberMonsters" name="numberMonsters" placeholder="_______" min="0" max="5" value="5">
+        </div>
+    
+        <div id="monsters-container" class="grid-container-vertical">
+            <!-- Initial content here -->
         </div>
     </div>
+
+    <div class="bottom-half">
+        <div class="grid-container-horizontal">
+            <div id="speed-container">
+                <!-- Rectangles will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <img src="img/SpeedTicks.png" alt="Absolute Image" id="absoluteImage">
 
     <!-- Include jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,7 +1,44 @@
+/* HTML ELEMENTS */
+
+body {
+    height: 100%;
+    margin: 0;
+    position:relative;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 60px; /* Adjust this value as needed */
+    /* Additional styling as per your design */
+}
+
+/* CLASSES */
+
+.top-half,
+.bottom-half {
+    height: 50vh;
+    width: 100%;
+}
+
+.top-half {
+    background-color: lightblue;
+}
+
+.bottom-half {
+    background-color: lightgreen;
+}
+
 .grid-container-vertical {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Create 2 equal-width columns */
-    gap: 10px; /* Add some spacing between the columns */
+    display: flex;
+    flex-direction: column; /* Elements will be displayed vertically */
+    gap: 10px; /* Add some spacing between the elements */
+}
+
+.grid-container-horizontal {
+    display: flex;
+    flex-direction: row; /* Elements will be displayed horizontally */
+    justify-content: space-between; /* To distribute space between elements */
+    align-items: center; /* Align items vertically in the center */
 }
 
 /* Define styles for the speed container and rectangles */
@@ -11,4 +48,25 @@
     height: 20px;
     background-color: #3498db;
     margin-top: 10px;
+}
+
+.monster label,
+.monster input {
+    margin-right: 10px; /* Adjust this value as needed */
+}
+
+.numberMonsters {
+    margin-bottom: 50px;
+}
+
+/* ID */
+
+#absoluteImage {
+    position: absolute;
+    top: 2px; /* Adjust top position as needed */
+    left: 300px; /* Adjust left position as needed */
+    z-index: 9999; /* Set a high z-index value to place it above other elements */
+    height: 50px; /* Set the desired height of the image */
+    width: auto; /* Let the width adjust based on the height */
+    /* Additional styling for your image */
 }
