@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Basic HTML Template</title>
     <!-- Link to your CSS file -->
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="top-half">
         <div class="numberMonsters">
             <label for="numberMonsters">Number of monsters:</label>
-            <input type="number" id="numberMonsters" name="numberMonsters" placeholder="_______" min="0" max="5" value="5">
+            <input type="number" id="numberMonsters" name="numberMonsters" placeholder="_______" min="0" max="8" value="0">
         </div>
     
         <div id="monsters-container" class="grid-container-vertical">
@@ -32,7 +33,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Link to your JavaScript file that uses jQuery -->
-    <script src="script.js"></script>
+    <script src="ScriptsJS/script.js" type="module"></script>
+<script src="ScriptsJS/createMonsters.js" type="module"></script>
+<script src="ScriptsJS/onLoad.js" type="module"></script>
+
 
 </body>
 </html>
